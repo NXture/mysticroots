@@ -1,15 +1,6 @@
-<a href="https://www.gatsbyjs.com">
-  <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-</a>
 
-# Gatsby Starter Contentful Homepage
+# Mysticroots - Contentful Homepage
 
-Create a homepage using Gatsby and Contentful. This starter demonstrates how to use Contentful to build a homepage and can be customized to match your own visual branding.
-
-[View the Demo](https://gatsbycontentfulhomepage.gatsbyjs.io/)
-
-**Note:**
-This version of the Contentful homepage starter is written in JavaScript. If you want to use Contentful but TypeScript is more your style, there is also a TypeScript version maintained on [GitHub](https://github.com/gatsbyjs/gatsby-starter-contentful-homepage-ts).
 
 ## Quick start
 
