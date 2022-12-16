@@ -1,15 +1,8 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import {
-  Nudge,
-  Container,
-  Section,
-  Heading,
-  Text,
-  ButtonList,
-  Kicker,
-} from "./ui"
+import { Nudge, Container, Section, Heading, Text, Kicker } from "./ui"
+import ContactForm from "./contact"
 
 export default function HomepageCta(props) {
   return (
@@ -22,7 +15,7 @@ export default function HomepageCta(props) {
         <Text as="p" center variant="lead">
           {props.text}
         </Text>
-        <ButtonList links={props.links} variant="center" reversed />
+        <ContactForm />
         {props.image && (
           <Nudge left={5} right={5} bottom={5}>
             <GatsbyImage
