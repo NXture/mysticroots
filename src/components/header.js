@@ -120,12 +120,12 @@ export default function Header() {
           </span>
           <Flex>
             <Space />
-            <div>
-              {cta && (
-                <Button to={cta.href} variant={isOpen ? "reversed" : "primary"}>
+            <div><AnchorLink to="/#contact-us" className={anchorLink}>{cta && (
+                <Button variant={isOpen ? "reversed" : "primary"}>
                   {cta.text}
                 </Button>
-              )}
+              )}</AnchorLink>
+              
             </div>
             <Nudge right={3}>
               <InteractiveIcon
