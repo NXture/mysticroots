@@ -11,14 +11,14 @@ export default function ContactForm() {
     <div className={wrapper}>
       <form
         method="post"
-        action="https://getform.io/f/a974b7c6-67b0-4a9b-a054-62c1aad35aa9"
+        action="https://getform.io/f/4501a883-2363-4ba9-8077-3e42ba6288f7"
       >
         <div className={contactFormWrapper}>
           <p>
             <label>
               <input
                 className={inputWrapper}
-                size={30}
+                size={33}
                 placeholder="Your name"
                 type="text"
                 name="name"
@@ -30,7 +30,7 @@ export default function ContactForm() {
             <label>
               <input
                 className={inputWrapper}
-                size={30}
+                size={33}
                 placeholder="Your Email"
                 type="email"
                 name="email"
