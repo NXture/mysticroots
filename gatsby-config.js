@@ -45,5 +45,11 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -90,
+      },
+    },
   ],
 }

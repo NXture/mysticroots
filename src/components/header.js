@@ -18,9 +18,11 @@ import {
   desktopHeaderNavWrapper,
   mobileHeaderNavWrapper,
   mobileNavSVGColorWrapper,
+  anchorLink,
 } from "./header.css"
 import NavItemGroup from "./nav-item-group"
 import BrandLogo from "./brand-logo"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -96,7 +98,11 @@ export default function Header() {
                 ))}
             </FlexList>
           </nav>
-          <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
+          <div>
+            <AnchorLink to="/#contact-us" className={anchorLink}>
+              {cta && <Button>{cta.text}</Button>}
+            </AnchorLink>
+          </div>
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>

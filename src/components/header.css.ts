@@ -63,3 +63,7 @@ export const mobileNavLink = style({
   paddingLeft: theme.space[4],
   paddingRight: theme.space[4],
 })
+
+export const anchorLink = style({
+  textDecoration:"none"
+})
