@@ -45,8 +45,8 @@ export const inputWrapper = style({
   paddingLeft: theme.space[3],
   paddingRight: theme.space[3],
   borderRadius: theme.radii.button,
-  color: theme.colors.background,
-  backgroundColor: theme.colors.active,
+  color: theme.colors.black,
+  backgroundColor: theme.colors.muted,
 })
 
 export const wrapper = style({
