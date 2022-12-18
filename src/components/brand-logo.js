@@ -6,9 +6,9 @@ export default function GatsbyContentfulLogo() {
     <StaticImage
       src="../logo.png"
       alt="A dinosaur"
-      layout="constrained"
-      quality={100}
-      width={90}
+      layout="fixed"
+      quality={90}
+      width={70}
     />
   )
 }
