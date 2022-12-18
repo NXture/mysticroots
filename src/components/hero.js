@@ -14,6 +14,7 @@ import {
 } from "./ui" //ButtonList
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { anchorLink } from "./header.css"
+import { homeButton } from "./ui.css"
 
 export default function Hero(props) {
   return (
@@ -38,6 +39,9 @@ export default function Hero(props) {
             <div>
               <AnchorLink to="/#contact-us" className={anchorLink}>
                 <Button>Contact Us</Button>
+              </AnchorLink>
+              <AnchorLink to="/#explore" className={anchorLink}>
+                <Button className={homeButton}>Explore</Button>
               </AnchorLink>
             </div>
             {/* <ButtonList links={props.links} /> */}

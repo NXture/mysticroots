@@ -624,6 +624,20 @@ export const visuallyHidden = style({
   width: "1px",
 })
 
+export const homeButton = style({
+  marginLeft: "4%",
+  color: theme.colors.text,
+  backgroundColor: theme.colors.background,
+  ":hover": {
+    color: theme.colors.text,
+    backgroundColor: theme.colors.muted,
+  },
+  ":focus": {
+    color: theme.colors.text,
+    backgroundColor: theme.colors.muted,
+  },
+})
+
 // for debugging only
 export const debug = style({
   outline: "1px solid tomato",
