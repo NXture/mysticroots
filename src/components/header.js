@@ -7,22 +7,20 @@ import {
   FlexList,
   Space,
   NavLink,
-  Button,
   InteractiveIcon,
   Nudge,
   VisuallyHidden,
-} from "./ui"
+} from "./ui" //Button
 import {
   mobileNavOverlay,
   mobileNavLink,
   desktopHeaderNavWrapper,
   mobileHeaderNavWrapper,
   mobileNavSVGColorWrapper,
-  anchorLink,
-} from "./header.css"
+} from "./header.css" //anchorLink
 import NavItemGroup from "./nav-item-group"
 import BrandLogo from "./brand-logo"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -61,7 +59,7 @@ export default function Header() {
     }
   `)
 
-  const { navItems, cta } = data.layout.header
+  const { navItems} = data.layout.header // const { navItems, cta } = data.layout.header
   const [isOpen, setOpen] = React.useState(false)
 
   React.useEffect(() => {
@@ -98,11 +96,11 @@ export default function Header() {
                 ))}
             </FlexList>
           </nav>
-          <div>
+          {/* <div>
             <AnchorLink to="/#contact-us" className={anchorLink}>
               {cta && <Button>{cta.text}</Button>}
             </AnchorLink>
-          </div>
+          </div> */}
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
@@ -120,13 +118,12 @@ export default function Header() {
           </span>
           <Flex>
             <Space />
-            <div><AnchorLink to="/#contact-us" className={anchorLink}>{cta && (
+            {/* <div><AnchorLink to="/#contact-us" className={anchorLink}>{cta && (
                 <Button variant={isOpen ? "reversed" : "primary"}>
                   {cta.text}
                 </Button>
-              )}</AnchorLink>
-              
-            </div>
+              )}</AnchorLink>   
+            </div> */}
             <Nudge right={3}>
               <InteractiveIcon
                 title="Toggle menu"

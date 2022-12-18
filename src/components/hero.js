@@ -3,7 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as React from "react"
 import {
   Box,
-  ButtonList,
+  Button,
   Container,
   Flex,
   Heading,
@@ -11,7 +11,9 @@ import {
   Section,
   Subhead,
   Text,
-} from "./ui"
+} from "./ui" //ButtonList
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { anchorLink } from "./header.css"
 
 export default function Hero(props) {
   return (
@@ -33,7 +35,12 @@ export default function Hero(props) {
             </Heading>
             <Subhead as="h2">{props.subhead}</Subhead>
             <Text as="p">{props.text}</Text>
-            <ButtonList links={props.links} />
+            <div>
+              <AnchorLink to="/#contact-us" className={anchorLink}>
+                <Button>Contact Us</Button>
+              </AnchorLink>
+            </div>
+            {/* <ButtonList links={props.links} /> */}
           </Box>
         </Flex>
       </Container>
