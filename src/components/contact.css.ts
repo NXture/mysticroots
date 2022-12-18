@@ -52,5 +52,5 @@ export const inputWrapper = style({
 export const wrapper = style({
   display: "flex",
   justifyContent: "center",
-  paddingBottom: "5%",
+  paddingBottom: "10%",
 })
