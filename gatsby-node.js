@@ -328,7 +328,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       id: ID!
       blocktype: String
       heading: String
-      links: [HomepageLink]
+      subtext: String
       logos: [HomepageLogo]
     }
 
@@ -557,7 +557,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       id: ID!
       blocktype: String @blocktype
       heading: String
-      links: [HomepageLink] @link(from: "links___NODE")
+      subtext: String
       logos: [HomepageLogo] @link(from: "logos___NODE")
     }
 
