@@ -296,6 +296,22 @@ exports.createSchemaCustomization = async ({ actions }) => {
       content: [HomepageBlock]
     }
 
+    interface VegetablesPage implements Node {
+      id: ID!
+      title: String
+      description: String
+      image: HomepageImage
+      content: [HomepageBlock]
+    }
+
+    interface AsepticPage implements Node {
+      id: ID!
+      title: String
+      description: String
+      image: HomepageImage
+      content: [HomepageBlock]
+    }
+
     interface AboutHero implements Node & HomepageBlock {
       id: ID!
       blocktype: String
@@ -581,6 +597,28 @@ exports.createSchemaCustomization = async ({ actions }) => {
   // CMS specific types for Fruits page
   actions.createTypes(/*GraphQL*/ `
    type ContentfulFruitsPage implements Node & FruitsPage @dontInfer {
+      id: ID!
+      title: String
+      description: String
+      image: HomepageImage @link(from: "image___NODE")
+      content: [HomepageBlock] @link(from: "content___NODE")
+    }
+  `)
+
+  // CMS specific types for Vegetables page
+  actions.createTypes(/*GraphQL*/ `
+   type ContentfulVegetablesPage implements Node & VegetablesPage @dontInfer {
+      id: ID!
+      title: String
+      description: String
+      image: HomepageImage @link(from: "image___NODE")
+      content: [HomepageBlock] @link(from: "content___NODE")
+    }
+  `)
+
+  // CMS specific types for Aseptic page
+  actions.createTypes(/*GraphQL*/ `
+   type ContentfulAsepticPage implements Node & AsepticPage @dontInfer {
       id: ID!
       title: String
       description: String
