@@ -11,10 +11,11 @@ import {
   Text,
   ButtonList,
 } from "./ui"
+import { featureWrapper } from "./ui.css"
 
 export default function Feature(props) {
   return (
-    <Section padding={4} background="muted">
+    <Section className={featureWrapper} padding={4} background="muted">
       <Container >
         <Flex gap={2} variant="responsive">
           <Box width="half" order={props.flip ? 1 : null}>

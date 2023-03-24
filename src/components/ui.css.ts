@@ -642,3 +642,7 @@ export const homeButton = style({
 export const debug = style({
   outline: "1px solid tomato",
 })
+
+export const featureWrapper = style({
+  color: theme.colors.black
+})
