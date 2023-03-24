@@ -10,6 +10,7 @@ import {
   Text,
   Space,
 } from "./ui"
+import { benefitWrapper } from "./benefit.css"
 
 function Benefit(props) {
   return (
@@ -37,7 +38,7 @@ export default function BenefitList(props) {
           {props.text && <Text variant="lead">{props.text}</Text>}
         </Box>
         <Space size={3} />
-        <FlexList gutter={3} variant="start" responsive wrap>
+        <FlexList gutter={3} variant="start" responsive wrap className={benefitWrapper}>
           {props.content.map((benefit) => (
             <Benefit key={benefit.id} {...benefit} />
           ))}
