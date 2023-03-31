@@ -7,8 +7,8 @@ export default function GatsbyContentfulLogo() {
       src="../logo.png"
       alt="A dinosaur"
       layout="fixed"
-      quality={99}
-      width={220}
+      quality={100}
+      width={210}
     />
   )
 }

@@ -28,7 +28,7 @@ export default function StatList(props) {
     <Container width="fullbleed">
       <Section padding={5} radius="large" background="primary">
         <Flex responsive variant="end">
-          <Box width="half">
+          <Box width="Twothrids">
             {props.icon && (
               <Icon alt={props.icon.alt} image={props.icon.gatsbyImageData} />
             )}
