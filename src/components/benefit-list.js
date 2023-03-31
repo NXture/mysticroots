@@ -6,7 +6,7 @@ import { benefitWrapper } from "./benefit.css"
 
 function Benefit(props) {
   return (
-    <Box as="li" width="third" padding={4} paddingY={3}>
+    <Box as="li" width="half" padding={4} paddingY={3}>
       {props.image && (
         <GatsbyImage
           alt={props.image.alt}

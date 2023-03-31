@@ -4,25 +4,24 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   Container,
   Section,
-  FlexList,
+  //FlexList,
   Text,
   Kicker,
   Heading,
   Flex,
   Box,
   Icon,
-  ButtonList,
+  //ButtonList,
   Nudge,
 } from "./ui"
-
-function Stat(props) {
-  return (
-    <Box>
-      <Text variant="stat">{props.value}</Text>
-      <Text variant="statLabel">{props.label}</Text>
-    </Box>
-  )
-}
+// function Stat(props) {
+//   return (
+//     <Box>
+//       <Text variant="stat">{props.value}</Text>
+//       <Text variant="statLabel">{props.label}</Text>
+//     </Box>
+//   )
+// }
 
 export default function StatList(props) {
   return (
@@ -38,14 +37,14 @@ export default function StatList(props) {
               {props.heading}
             </Heading>
             {props.text && <Text variant="lead">{props.text}</Text>}
-            <FlexList wrap gap={4}>
+            {/* <FlexList wrap gap={4}>
               {props.content.map((stat) => (
                 <li key={stat.id}>
                   <Stat {...stat} />
                 </li>
               ))}
             </FlexList>
-            <ButtonList links={props.links} reversed />
+            <ButtonList links={props.links} reversed /> */}
           </Box>
           <Box width="half">
             {props.image && (
