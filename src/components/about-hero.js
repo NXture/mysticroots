@@ -11,8 +11,11 @@ export default function AboutHero(props) {
         <SuperHeading className={styles.aboutHeroHeader}>
           {props.heading}
         </SuperHeading>
-        {props.text && (
-          <Text className={styles.aboutHeroText}>{props.text}</Text>
+        {props.text1 && (
+          <Text className={styles.aboutHeroText}>{props.text1}</Text>
+        )}
+        {props.text2 && (
+          <Text className={styles.aboutHeroText}>{props.text2}</Text>
         )}
       </Container>
       <Container width="wide">
@@ -32,7 +35,8 @@ export const query = graphql`
   fragment AboutHeroContent on AboutHero {
     id
     heading
-    text
+    text1
+    text2
     image {
       id
       gatsbyImageData

@@ -8,7 +8,7 @@ export default function GatsbyContentfulLogo() {
       alt="A dinosaur"
       layout="fixed"
       quality={99}
-      width={200}
+      width={220}
     />
   )
 }
