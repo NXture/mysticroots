@@ -189,6 +189,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       heading: String
       text: String
       image: HomepageImage
+      links: [HomepageLink]
     }
 
     interface HomepageBenefitList implements Node & HomepageBlock {
@@ -479,6 +480,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
       heading: String
       text: String
       image: HomepageImage @link(from: "image___NODE")
+      links: [HomepageLink] @link(from: "links___NODE")
     }
 
     type ContentfulHomepageBenefitList implements Node & HomepageBlock & HomepageBenefitList

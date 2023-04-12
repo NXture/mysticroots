@@ -1,12 +1,21 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Container, Section, FlexList, Box, Heading, Text, Space } from "./ui"
+import {
+  Container,
+  Section,
+  FlexList,
+  Box,
+  Heading,
+  Text,
+  Space,
+  ButtonList,
+} from "./ui"
 import { benefitWrapper } from "./benefit.css"
 
 function Benefit(props) {
   return (
-    <Box as="li" width="half" padding={4} paddingY={3}>
+    <Box as="li" width="third" padding={4} paddingY={3}>
       {props.image && (
         <GatsbyImage
           alt={props.image.alt}
@@ -16,6 +25,7 @@ function Benefit(props) {
       <Space size={2} />
       <Heading variant="subheadSmall">{props.heading}</Heading>
       <Text>{props.text}</Text>
+      <ButtonList links={props.links} />
     </Box>
   )
 }
@@ -54,6 +64,11 @@ export const query = graphql`
       id
       heading
       text
+      links {
+        id
+        href
+        text
+      }
       image {
         id
         gatsbyImageData

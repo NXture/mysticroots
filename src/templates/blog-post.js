@@ -43,16 +43,16 @@ export default function BlogPost(props) {
               </Flex>
             </Box>
           )}
-          <Space size={4} />
+          <Space size={2} />
           <Text center>{props.date}</Text>
-          <Space size={4} />
-          {props.image && (
-            <GatsbyImage
-              alt={props.image.alt}
-              image={props.image.gatsbyImageData}
-            />
-          )}
-          <Space size={5} />
+          <Box padding={4}>
+            {props.image && (
+              <GatsbyImage
+                alt={props.image.alt}
+                image={props.image.gatsbyImageData}
+              />
+            )}
+          </Box>
           <div
             className={styles.blogPost}
             dangerouslySetInnerHTML={{
