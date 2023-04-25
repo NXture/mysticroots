@@ -45,7 +45,7 @@ export default function BlogPost(props) {
           )}
           <Space size={2} />
           <Text center>{props.date}</Text>
-          <Box padding={4}>
+          <Box center padding={4}>
             {props.image && (
               <GatsbyImage
                 alt={props.image.alt}
