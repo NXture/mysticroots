@@ -12,10 +12,11 @@ import {
   Icon,
   LinkList,
 } from "./ui"
+import { flexWrapper, productWrapper } from "./product-list.css"
 
 function Product(props) {
   return (
-    <Box center>
+    <Box center className={productWrapper}>
       {props.image && (
         <Icon
           alt={props.image.alt}
@@ -41,7 +42,7 @@ export default function ProductList(props) {
           </Heading>
           {props.text && <Text>{props.text}</Text>}
         </Box>
-        <FlexList gap={4} variant="responsive">
+        <FlexList gap={4} className={flexWrapper} >
           {props.content.map((product) => (
             <li key={product.id}>
               <Product {...product} />
